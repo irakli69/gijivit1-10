@@ -7,7 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import com.example.finaluriversion11.fragments.ChangePasswordFragmentDirections
+import com.example.gijivit1_5.fragments.ChangePasswordFragmentDirections
 import com.example.gijivit1_5.R
 import com.google.firebase.auth.FirebaseAuth
 

@@ -37,8 +37,7 @@ class FeedFragment : Fragment(R.layout.fragment_feed) {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val list = ArrayList<Post>()
                 for (data in snapshot.children){
-                    val model = data.getValue(Post :: class.java)
-                    list.add(model as Post)
+                    list.add(data.getValue(Post::class.java) as Post)
                 }
                 if (list.size > 0){
                     recyclerViewPostAdapter = RecyclerViewPostAdapter(list)

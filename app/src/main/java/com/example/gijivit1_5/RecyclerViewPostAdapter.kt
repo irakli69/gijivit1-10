@@ -32,7 +32,7 @@ class RecyclerViewPostAdapter(private val list: List<Post>): RecyclerView.Adapte
 
 
 
-        @SuppressLint("SetTextI18n")
+
         fun setData(post: Post) {
             textViewUserName.text = post.userName
             textViewDayNumber.text = "Day " + post.dayNumber
