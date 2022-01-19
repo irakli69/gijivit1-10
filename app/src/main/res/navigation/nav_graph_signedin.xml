@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.finaluriversion11.fragments.HomeFragment"
+        android:name="com.example.gijivit1_5.fragments.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.finaluriversion11.fragments.ProfileFragment"
+        android:name="com.example.gijivit1_5.fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/changePasswordFragment"
-        android:name="com.example.finaluriversion11.fragments.ChangePasswordFragment"
+        android:name="com.example.gijivit1_5.fragments.ChangePasswordFragment"
         android:label="fragment_change_password"
         tools:layout="@layout/fragment_change_password" >
         <action
@@ -30,12 +30,12 @@
     </fragment>
     <fragment
         android:id="@+id/progressFragment"
-        android:name="com.example.finaluriversion11.fragments.ProgressFragment"
+        android:name="com.example.gijivit1_5.fragments.ProgressFragment"
         android:label="fragment_progress"
         tools:layout="@layout/fragment_progress" />
     <fragment
         android:id="@+id/feedFragment"
-        android:name="com.example.finaluriversion11.fragments.FeedFragment"
+        android:name="com.example.gijivit1_5.fragments.FeedFragment"
         android:label="fragment_feed"
         tools:layout="@layout/fragment_feed" />
 </navigation>
