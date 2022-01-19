@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/round_outline_days"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Day 1"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDayType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Push Day"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageViewFirst"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewSecond"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDayType"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageViewThird"
+        android:layout_width="130dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSecond"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageViewSecond"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewThird"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFirst"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewFirstTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diamond Push-Ups"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFirst"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFirst" />
+
+    <TextView
+        android:id="@+id/textViewFirstDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2 Sets of 6 Repetitions"
+        app:layout_constraintEnd_toEndOf="@+id/textViewFirstTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewFirstTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFirstTitle" />
+
+    <TextView
+        android:id="@+id/textViewSecondTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pyke Push-Ups"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSecond"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSecond" />
+    <TextView
+        android:id="@+id/textViewSecondDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2 Sets of 6 Repetitions"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSecondTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewSecondTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSecondTitle" />
+
+
+    <TextView
+        android:id="@+id/textViewThirdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wide Push-Ups"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewThird"
+        app:layout_constraintTop_toTopOf="@+id/imageViewThird" />
+
+    <TextView
+        android:id="@+id/textViewThirdDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="2 Sets of 6 Repetitions"
+        app:layout_constraintEnd_toEndOf="@+id/textViewThirdTitle"
+        app:layout_constraintStart_toStartOf="@+id/textViewThirdTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewThirdTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

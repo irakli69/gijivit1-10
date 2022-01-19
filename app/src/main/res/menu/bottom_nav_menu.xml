@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/ic_baseline_table_rows_24"
+        android:title="Feed" />
+
+    <item
+        android:id="@+id/progressFragment"
+        android:icon="@drawable/ic_baseline_fitness_center_24"
+        android:title="Progress" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Profile" />
+
+
+
+
+</menu>

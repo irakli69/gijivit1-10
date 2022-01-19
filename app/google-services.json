@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "247176398903",
+    "firebase_url": "https://gijivit1-5-default-rtdb.firebaseio.com",
+    "project_id": "gijivit1-5",
+    "storage_bucket": "gijivit1-5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247176398903:android:fa24c8b2a606c52a0597b2",
+        "android_client_info": {
+          "package_name": "com.example.gijivit1_5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247176398903-j89ankbhtqmrt3fcrtlb4np1avahn2i3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvuMk2GBlSUs-ZmsjLg9wlGDZHopUuecw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247176398903-j89ankbhtqmrt3fcrtlb4np1avahn2i3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
