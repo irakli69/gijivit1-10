@@ -9,13 +9,16 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.gijivit1_5.fragments.ChangePasswordFragmentDirections
 import com.example.gijivit1_5.R
+import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 
 
 class ChangePasswordFragment : Fragment(R.layout.fragment_change_password) {
 
-    private lateinit var editTextEmailChangePassword : EditText
-    private lateinit var buttonChangePassword : Button
+
+    private lateinit var editTextNewPassword : EditText
+    private lateinit var editTextRepeatNewPassword : EditText
+    private lateinit var buttonChange : Button
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -27,26 +30,35 @@ class ChangePasswordFragment : Fragment(R.layout.fragment_change_password) {
     }
 
     private fun init() {
-        editTextEmailChangePassword = requireView().findViewById(R.id.editTextEmailChangePassword)
-        buttonChangePassword = requireView().findViewById(R.id.buttonChangePassword)
+
+        editTextNewPassword = requireView().findViewById(R.id.editTextNewPassword)
+        editTextRepeatNewPassword = requireView().findViewById(R.id.editTextRepeatNewPassword)
+        buttonChange = requireView().findViewById(R.id.buttonChange)
     }
 
     private fun resetPassword(view: View) {
-        buttonChangePassword.setOnClickListener {
-            val email = editTextEmailChangePassword.text.toString()
-            if(email.isEmpty()){
-                editTextEmailChangePassword.error = "Empty!"
+        buttonChange.setOnClickListener {
+
+            val newPassword = editTextNewPassword.text.toString()
+            val repeatNewPassword = editTextRepeatNewPassword.text.toString()
+
+            if(newPassword.length < 9){
+                editTextNewPassword.error = "Password's length must be at least 9"
                 return@setOnClickListener
             }
-            FirebaseAuth.getInstance().sendPasswordResetEmail(email)
-                .addOnCompleteListener{ task ->
+            else if(newPassword != repeatNewPassword){
+                editTextRepeatNewPassword.error = "Passwords don't match"
+                return@setOnClickListener
+            }
+            FirebaseAuth.getInstance().currentUser?.updatePassword(newPassword)
+                ?.addOnCompleteListener{ task ->
                     if(task.isSuccessful){
-                        Toast.makeText(requireContext(), "Check Email!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(requireContext(), "Password Changed Successfully", Toast.LENGTH_SHORT).show()
                         val controller = Navigation.findNavController(view)
                         val action = ChangePasswordFragmentDirections.actionChangePasswordFragmentToProfileFragment()
-                            controller.navigate(action)
-                        }
+                        controller.navigate(action)
                     }
+                }
 
 
                 }

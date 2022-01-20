@@ -19,8 +19,7 @@
         app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
-        android:outlineAmbientShadowColor="@color/white">
+        android:layout_marginTop="110dp">
 
 
         <LinearLayout
@@ -42,10 +41,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25sp"
+                    android:fontFamily="@font/REXTRO"
+                    android:text="Registration"
                     android:textColor="@color/black"
-                    android:text="რეგისტრაცია"
-                    />
+                    android:textSize="25sp" />
 
 
             </LinearLayout>
@@ -57,10 +56,11 @@
                 android:layout_marginEnd="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="დაიწყე დღესვე"/>
+                    android:text="Start today" />
 
 
             </LinearLayout>
@@ -81,7 +81,7 @@
                 android:backgroundTint="@color/gray"
                 android:baselineAligned="false">
                 <com.google.android.material.textfield.TextInputLayout
-                    android:hint="სახელი"
+                    android:hint="Name"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="5dp"
@@ -104,7 +104,7 @@
                         android:textStyle="normal" />
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
-                    android:hint="გვარი"
+                    android:hint="Surname"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="5dp"
@@ -167,7 +167,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:hint="პაროლი"
+                    android:hint="Password"
                     app:endIconMode="password_toggle"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -191,7 +191,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:hint="გაიმეორეთ პაროლი"
+                    android:hint="Repeat Password"
                     app:endIconMode="password_toggle"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
@@ -313,7 +313,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="რეგისტრაცია"
+                    android:text="Register"
                     android:id="@+id/buttonSignUp"
                     android:backgroundTint="@color/red"/>
 
@@ -342,11 +342,12 @@
             android:layout_marginTop="40dp"/>
 
         <TextView
+            android:id="@+id/textViewSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:id="@+id/textViewSignIn"       
             android:layout_marginTop="40dp"
+            android:fontFamily="@font/REXTRO"
             android:text="Sign in"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />

@@ -35,6 +35,7 @@
         android:id="@+id/textViewDayNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/REXTRO"
         android:text="Day 1"
         android:textColor="#000000"
         android:textSize="34sp"

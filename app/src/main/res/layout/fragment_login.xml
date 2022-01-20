@@ -11,11 +11,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="გიჟივით"
-        android:textSize="30dp"
-        android:textColor="@color/white"
+        android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:layout_gravity="center"/>
+        android:fontFamily="@font/BaskaraDemoRegular"
+        android:text="GIJIVIT"
+        android:textColor="@color/white"
+        android:textSize="48sp" />
 
 
     <androidx.cardview.widget.CardView
@@ -43,32 +44,24 @@
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/REXTRO"
+                    android:text="Join today"
+
                     android:textColor="@color/black"
-                    android:text="შემოგვიერთდი"
-
-                    android:layout_gravity="center"/>
+                    android:textSize="25sp" />
 
 
             </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-
-
-            </LinearLayout>
             <TextView
-                android:layout_width="300dp"
-                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="5dp"
+                android:layout_height="2dp"
                 android:background="@color/black"
                 android:layout_marginTop="10dp"/>
 
@@ -136,7 +129,7 @@
                     android:textColor="#3F51B5"
                     android:textStyle="normal"
                     android:textSize="13sp"
-                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
                     android:layout_marginTop="2dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
@@ -227,12 +220,12 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/buttonLoginAuth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="შესვლა"
                 android:layout_gravity="center"
-                android:id="@+id/buttonLoginAuth"
-                android:backgroundTint="@color/red"/>
+                android:backgroundTint="@color/red"
+                android:text="Login" />
 
             <LinearLayout
                 android:layout_marginBottom="10dp"
@@ -241,22 +234,23 @@
                 android:orientation="horizontal"
                 android:layout_weight="3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp">
                 <TextView
                     android:layout_width="130dp"
-                    android:layout_height="1dp"
+                    android:layout_height="2dp"
                     android:background="@color/black"
-                    android:layout_marginRight="7dp"/>
+                    android:layout_marginEnd="7dp"/>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ან"
-                    android:textSize="20dp"/>
+                    android:text="or"
+                    android:textSize="20sp" />
                 <TextView
                     android:layout_width="130dp"
-                    android:layout_height="1dp"
+                    android:layout_height="2dp"
                     android:background="@color/black"
-                    android:layout_marginLeft="7dp"/>
+                    android:layout_marginStart="7dp"/>
 
             </LinearLayout>
 
@@ -268,12 +262,13 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <Button
+                    android:id="@+id/buttonSignUpLogin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="რეგისტრაცია"
-                    android:id="@+id/buttonSignUpLogin"
-                    android:backgroundTint="@color/red"/>
+                    android:backgroundTint="@color/red"
+                    android:text="Register" />
             </LinearLayout>
 
         </LinearLayout>
