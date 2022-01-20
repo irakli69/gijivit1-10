@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="sky_blue">#03A9F4</color>
     <color name="green">#4CAF50</color>
+    <color name="gray">#BDBBBB</color>
+    <color name="red">#D2D30909</color>
 </resources>
