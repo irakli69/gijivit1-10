@@ -12,9 +12,7 @@ import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
 import com.example.gijivit1_5.MainActivity
 import com.example.gijivit1_5.R
-import com.example.gijivit1_5.dialogs.ChangePasswordDialog
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.UserInfo
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -91,7 +89,8 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         }
 
         buttonChangePasswordLogin.setOnClickListener {
-            ChangePasswordDialog(requireContext()).show()
+            val action = ProfileFragmentDirections.actionProfileFragmentToChangePasswordFragment()
+            controller.navigate(action)
         }
     }
 }

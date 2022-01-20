@@ -52,9 +52,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         )
         dayList.add(
             Day("Day 4", "Rest Day",
-                R.drawable.diamond_pushup, "Diamond Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.pike_pushup, "Pyke Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.wide_pushup, "Wide Push-Ups", "2 Sets of 6 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
@@ -80,16 +80,16 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         )
         dayList.add(
             Day("Day 8", "Rest Day",
-                R.drawable.diamond_pushup, "Diamond Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.pike_pushup, "Pyke Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.wide_pushup, "Wide Push-Ups", "2 Sets of 6 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
             Day("Day 9", "Rest Day",
-                R.drawable.diamond_pushup, "Diamond Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.pike_pushup, "Pyke Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.wide_pushup, "Wide Push-Ups", "2 Sets of 6 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
@@ -115,9 +115,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         )
         dayList.add(
             Day("Day 13", "Rest Day",
-                R.drawable.diamond_pushup, "Diamond Push-Ups", "2 Sets of 10 Repetitions",
-                R.drawable.pike_pushup, "Pyke Push-Ups", "2 Sets of 10 Repetitions",
-                R.drawable.wide_pushup, "Wide Push-Ups", "2 Sets of 10 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
@@ -143,9 +143,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         )
         dayList.add(
             Day("Day 17", "Rest Day",
-                R.drawable.diamond_pushup, "Diamond Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.pike_pushup, "Pyke Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.wide_pushup, "Wide Push-Ups", "2 Sets of 6 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
@@ -171,23 +171,23 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         )
         dayList.add(
             Day("Day 21", "Rest Day",
-                R.drawable.diamond_pushup, "Diamond Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.pike_pushup, "Pyke Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.wide_pushup, "Wide Push-Ups", "2 Sets of 6 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
             Day("Day 22", "Rest Day",
-                R.drawable.pullup, "Pull-Ups", "2 Sets of 4 Repetitions",
-                R.drawable.curls, "Biceps Curls", "2 Sets of 12 Repetitions",
-                R.drawable.plank, "Plank", "30 seconds"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
             Day("Day 23", "Rest Day",
-                R.drawable.diamond_pushup, "Diamond Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.pike_pushup, "Pyke Push-Ups", "2 Sets of 6 Repetitions",
-                R.drawable.wide_pushup, "Wide Push-Ups", "2 Sets of 6 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
@@ -213,9 +213,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         )
         dayList.add(
             Day("Day 27", "Rest Day",
-                R.drawable.squat, "Squats", "2 Sets of 12 Repetitions",
-                R.drawable.bulgarian_squat, "Bulgarian Squats", "2 Sets of 6 Repetitions",
-                R.drawable.crunches, "Crunches", "2 Sets of 8 Repetitions"
+                0, "", "",
+                0, "", "",
+                0, "", ""
             )
         )
         dayList.add(
