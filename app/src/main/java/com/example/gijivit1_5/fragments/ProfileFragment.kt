@@ -2,9 +2,7 @@ package com.example.gijivit1_5.fragments
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -34,18 +32,16 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
     private val data = FirebaseDatabase.getInstance().getReference("UserInfo")
 
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         init()
 
         callbackListener()
 
-        profileListeners()
+        profileListeners(view)
 
-        return super.onCreateView(inflater, container, savedInstanceState)
+
     }
 
     private fun callbackListener() {
@@ -76,8 +72,8 @@ class ProfileFragment : Fragment(R.layout.fragment_profile) {
         buttonChangePasswordLogin = requireView().findViewById(R.id.buttonChangePasswordLogin)
     }
 
-    private fun profileListeners() {
-        val controller = Navigation.findNavController(requireView())
+    private fun profileListeners(view: View) {
+        val controller = Navigation.findNavController(view)
         buttonUpload.setOnClickListener {
             val imageUrl = editTextProfileImageUrl.text.toString().trim()
             if (imageUrl.isEmpty()){
