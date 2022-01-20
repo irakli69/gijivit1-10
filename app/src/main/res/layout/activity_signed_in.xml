@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
-        android:marginBottom="55dp"
+        android:layout_marginBottom="55dp"
         app:navGraph="@navigation/nav_graph_signedin"
         android:id="@+id/nav_host_signedin_fragment"/>
 
