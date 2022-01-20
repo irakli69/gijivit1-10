@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <EditText
-                    android:layout_width="350dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Change Profile Image"
                     android:textColorHint="#BAD5CECE"
