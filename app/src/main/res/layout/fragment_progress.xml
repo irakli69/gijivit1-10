@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@drawable/progres"
     android:layout_height="match_parent"
     tools:context=".fragments.ProgressFragment">
 
@@ -13,16 +13,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Share your progress with other people"
-        android:textColor="#000000"
-        android:textSize="20sp"
+        android:shadowColor="#050504"
+        android:shadowRadius="10"
+        android:text="Share your progress"
+        android:textColor="#FFC107"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_marginLeft="20dp"
-        android:background="@drawable/round_outline"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,8 +36,13 @@
 
         <EditText
             android:id="@+id/editTextDayNumberPost"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/round_outline_progress"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="70dp"
             android:ems="10"
             android:hint="Which day are you on"
             android:inputType="textPersonName" />
@@ -43,24 +50,39 @@
         <EditText
             android:id="@+id/editTextPictureUrlPost"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/round_outline_progress"
             android:ems="10"
+            android:layout_margin="10dp"
             android:hint="Enter your progress picture URL"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editTextDescriptionPost"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_outline_progress"
             android:ems="10"
             android:hint="Description"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/buttonPost"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_height="100dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
             android:layout_gravity="center"
+            android:backgroundTint="#8BC34A"
+            android:background="@drawable/round_outline_progress"
             android:text="Post" />
     </LinearLayout>
 
