@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:fontFamily="@font/BaskaraDemoRegular"
+        android:fontFamily="@font/baskara"
         android:text="GIJIVIT"
         android:textColor="@color/white"
         android:textSize="48sp" />
@@ -49,12 +49,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/REXTRO"
+                    android:fontFamily="@font/rextro"
                     android:text="Join today"
-
                     android:textColor="@color/black"
                     android:textSize="25sp" />
-
 
             </LinearLayout>
 
