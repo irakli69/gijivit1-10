@@ -73,12 +73,4 @@
         app:layout_constraintStart_toStartOf="@+id/editTextProfileImageUrl"
         app:layout_constraintTop_toBottomOf="@+id/editTextProfileImageUrl" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/usserPfp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewProfileName"
-        app:layout_constraintEnd_toStartOf="@+id/textViewProfileName"
-        app:layout_constraintTop_toTopOf="@+id/textViewProfileName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
